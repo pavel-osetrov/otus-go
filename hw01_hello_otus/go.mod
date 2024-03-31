@@ -1,4 +1,4 @@
-module github.com/pavel-osetrov/hw01_hello_otus
+module github.com/pavel-osetrov/otus-go/hw01_hello_otus
 
 go 1.22
 
