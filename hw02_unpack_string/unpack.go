@@ -9,13 +9,11 @@ import (
 var ErrInvalidString = errors.New("invalid string")
 
 func Unpack(str string) (string, error) {
-
 	var builder strings.Builder
 
 	var previousValue rune
 
 	for key, value := range str {
-
 		IsNumberValue := IsNumber(value)
 		IsNumberPreviousValue := IsNumber(previousValue)
 		IsZero := value == '0'
@@ -49,7 +47,6 @@ func Unpack(str string) (string, error) {
 			builder.WriteString(string(value))
 		}
 		previousValue = value
-
 	}
 
 	return builder.String(), nil
